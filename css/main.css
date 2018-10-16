@@ -1758,6 +1758,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: relative;
     display: table;
     transition: 0.5s;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
 }
 
 
