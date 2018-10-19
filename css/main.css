@@ -1,9 +1,5 @@
 /* =================================================================== 
  *
- *  Glint v1.0 Main Stylesheet
- *  11-20-2017
- *  ------------------------------------------------------------------
- *
  *  TOC:
  *  # base style overrides
  *      ## links
@@ -1498,7 +1494,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
@@ -3522,7 +3518,6 @@ footer .disclamier{
     line-height: 60px;
     text-align: center;
     background: rgba(0, 0, 0, 0.8);
-    color: ;
     text-align: center;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease-in-out;
