@@ -2214,7 +2214,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background:linear-gradient(to bottom right, rgb(1, 255, 128) 0%, rgba(0,150,250,1) 100%);
+    background:linear-gradient(to bottom right, rgba(0,200,100,1) 0%, rgba(0,150,250,1) 100%);
     color: #010507;
     position: relative;
 }
@@ -3522,8 +3522,8 @@ footer .disclamier{
     width: 60px;
     line-height: 60px;
     text-align: center;
-    background: black;
-    color: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.8);
+    color: ;
     text-align: center;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease-in-out;
