@@ -1451,24 +1451,23 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin: 0;
     padding: 0;
     left: 80px;
-    top: 80%;
-    -webkit-transform: translateY(-50%) scale(1.3);
-    -ms-transform: translateY(-50%) scale(1.3);
-    transform: translateY(-50%) scale(1.3);
+    top: -25%;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
     transition: 0.5s;
     z-index: 501;
 }
 
 .header-logo:hover{
-    -webkit-transform: scale(1.5) translateY(-35%);
-    -ms-transform: scale(1.5) translateY(-35%);
-    transform: scale(1.5) translateY(-35%);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
     transition: 0.5s ;
 }
 
 .header-logo a {
     display: block;
-    margin: 50px 0 0 0;
     padding: 0;
     outline: 0;
     border: none;
@@ -1818,7 +1817,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content h1 {
     font-family: "montserrat-medium", sans-serif;
-    font-size: 6.3rem;
+    font-size: 4.0rem;
     line-height: 1.333;
     margin-top: 0;
     color: #FFFFFF;
@@ -1835,7 +1834,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__buttons .btn {
-    width: 215px;
+    width: 225px;
     border-color: #FFFFFF;
     color: #FFFFFF;
     margin: 1.5rem 1.5rem 0 0;
