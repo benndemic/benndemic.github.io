@@ -52,9 +52,7 @@ if($_POST) {
         if ($mail) { echo "OK"; }
         else { echo "Something went wrong. Please try again."; }
         
-    } # end if - no validation error
-
-    else {
+    } else {
 
         $response = (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
         $response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
@@ -64,6 +62,8 @@ if($_POST) {
 
     } # end if - there was a validation error
 
+
 }
+
 
 ?>
