@@ -2214,7 +2214,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background:linear-gradient(to bottom right, rgba(0,200,100,1) 0%, rgba(0,150,250,1) 100%);
+    background:linear-gradient(to bottom right, rgb(1, 255, 128) 0%, rgba(0,150,250,1) 100%);
     color: #010507;
     position: relative;
 }
