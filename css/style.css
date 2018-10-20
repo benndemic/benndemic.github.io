@@ -271,20 +271,22 @@ form button:hover {
 }
 
 .header-logo:hover{
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
   transition: 0.5s ;
 }
 
-.header-logo a {
-  display: block;
+.header-logo {
+  display: absolute;
   padding: 0;
   outline: 0;
   border: none;
-  width: 200px;
+  width: 100px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  margin-top: 124px;
+  margin-left:-96px;
 }
 
 
@@ -299,7 +301,7 @@ form button:hover {
   line-height: 1.846;
   padding: 3.6rem 3rem 3.6rem 3.6rem;
   height: 100%;
-  width: 280px;
+  width: 300px;
   position: fixed;
   right: 0;
   top: 0;
@@ -309,7 +311,7 @@ form button:hover {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-transform: translateZ(0);
-  /* -webkit-backface-visibility: hidden; */
+  -webkit-backface-visibility: hidden;
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
