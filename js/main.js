@@ -1,7 +1,4 @@
-/* ===================================================================
- * Glint - Main JS
- *
- * ------------------------------------------------------------------- */
+/* == */
 
 (function($) {
 
@@ -335,7 +332,7 @@
         $('#contactForm').validate({
         
             /* submit via ajax */
-            submitHandler: function(form) {
+            /* submitHandler: function(form) {
     
                 var sLoader = $('.submit-loader');
     
@@ -375,7 +372,7 @@
                     }
     
                 });
-            }
+            }*/
     
         });
     };
