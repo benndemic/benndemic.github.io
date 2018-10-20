@@ -220,8 +220,8 @@ form button:hover {
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-700px) rotate(600deg);
-            transform: translateY(-700px) rotate(600deg);
+    -webkit-transform: translateY(-1800px) rotate(600deg);
+            transform: translateY(-1800px) rotate(600deg);
   }
 }
 @keyframes square {
@@ -230,7 +230,10 @@ form button:hover {
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-700px) rotate(600deg);
-            transform: translateY(-700px) rotate(600deg);
+    -webkit-transform: translateY(-1800px) rotate(600deg);
+            transform: translateY(-1800px) rotate(600deg);
   }
+}
+.s-header{
+  z-index:10001;
 }
