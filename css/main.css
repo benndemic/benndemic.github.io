@@ -1,9 +1,5 @@
 /* =================================================================== 
  *
- *  Glint v1.0 Main Stylesheet
- *  11-20-2017
- *  ------------------------------------------------------------------
- *
  *  TOC:
  *  # base style overrides
  *      ## links
@@ -1450,25 +1446,24 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     background-blend-mode: darken;
     margin: 0;
     padding: 0;
-    left: 80px;
-    top: 80%;
-    -webkit-transform: translateY(-50%) scale(1.3);
-    -ms-transform: translateY(-50%) scale(1.3);
-    transform: translateY(-50%) scale(1.3);
+    left: 40px;
+    top: -25%;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
     transition: 0.5s;
     z-index: 501;
 }
 
 .header-logo:hover{
-    -webkit-transform: scale(1.5) translateY(-35%);
-    -ms-transform: scale(1.5) translateY(-35%);
-    transform: scale(1.5) translateY(-35%);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
     transition: 0.5s ;
 }
 
 .header-logo a {
     display: block;
-    margin: 50px 0 0 0;
     padding: 0;
     outline: 0;
     border: none;
@@ -1499,7 +1494,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
@@ -1662,9 +1657,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #39b54a;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    color: rgba(0,200,100,1);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .header-menu-toggle.opaque {
@@ -1699,8 +1694,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     right: auto;
     bottom: auto;
     background-color: white;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .header-menu-icon::before, .header-menu-icon::after {
@@ -1758,6 +1753,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: relative;
     display: table;
     transition: 0.5s;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
 }
 
 
@@ -1816,7 +1813,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content h1 {
     font-family: "montserrat-medium", sans-serif;
-    font-size: 6.3rem;
+    /* font-size: ; */
     line-height: 1.333;
     margin-top: 0;
     color: #FFFFFF;
@@ -1833,7 +1830,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__buttons .btn {
-    width: 215px;
+    width: 225px;
     border-color: #FFFFFF;
     color: #FFFFFF;
     margin: 1.5rem 1.5rem 0 0;
@@ -1871,8 +1868,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__scroll a::before {
-    border-bottom: 2px solid #39b54a;
-    border-right: 2px solid #39b54a;
+    border-bottom: 2px solid rgba(0,200,100,1);
+    border-right: 2px solid rgba(0,200,100,1);
     content: '';
     display: block;
     height: 8px;
@@ -1896,7 +1893,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #39b54a;
+    background-color: rgba(0,200,100,1);
     position: absolute;
     right: 7.2rem;
     bottom: 0;
@@ -2066,7 +2063,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1500px) {
     .home-content h1 {
-        font-size: 6rem;
+        font-size: 3rem;
     }
     .home-content__main {
         max-width: 1000px;
@@ -2075,7 +2072,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 1200px) {
     .home-content h1 {
-        font-size: 5.5rem;
+        font-size: 3rem;
     }
     .home-content__main {
         max-width: 800px;
@@ -2084,7 +2081,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 1000px) {
     .home-content h1 {
-        font-size: 4.6rem;
+        font-size: 3rem;
     }
     .home-content br {
         display: none;
@@ -2098,10 +2095,10 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 800px) {
     .home-content h3 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
     .home-content h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .home-content__main {
         padding-right: 70px;
@@ -2135,7 +2132,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .home-content h1 {
-        font-size: 3.8rem;
+        font-size: 3rem;
     }
     .home-social {
         right: 2rem;
@@ -2163,7 +2160,7 @@ html.no-csstransitions .home-content__main {
         min-height: 642px;
     }
     .home-content h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     .home-content__main {
         text-align: center;
@@ -2186,7 +2183,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 450px) {
     .home-content h1 {
-        font-size: 3.3rem;
+        font-size: 3rem;
     }
 }
 
@@ -2195,7 +2192,7 @@ html.no-csstransitions .home-content__main {
         min-height: 630px;
     }
     .home-content h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
     .home-content__main {
         padding-top: 16.2rem;
@@ -2212,7 +2209,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #39b54a;
+    background:linear-gradient(to bottom right, rgba(0,200,100,1) 0%, rgba(0,150,250,1) 100%);
     color: #010507;
     position: relative;
 }
@@ -2417,7 +2414,7 @@ html.no-csstransitions .home-content__main {
 
 .services-list .service-icon {
     float: left;
-    color: #39b54a;
+    color: rgba(0,200,100,1);
     font-size: 4.8rem;
     margin-top: -.6rem;
 }
@@ -2986,7 +2983,7 @@ html.no-csstransitions .home-content__main {
     padding: 0 2rem;
     margin: 0;
     color: #FFFFFF;
-    background: #39b54a;
+    background: rgba(0,200,100,1);
 }
 
 .s-contact .form-field label::after {
@@ -2997,14 +2994,14 @@ html.no-csstransitions .home-content__main {
     margin-top: -6px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #39b54a;
+    border-right: 5px solid rgba(0,200,100,1);
 }
 
 .contact__line {
     display: block;
     width: 2px;
     height: 20.4rem;
-    background-color: #39b54a;
+    background-color: rgba(0,200,100,1);
     position: absolute;
     left: 50%;
     top: -10.2rem;
@@ -3031,7 +3028,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-content h5 {
     margin-top: 0;
-    color: #39b54a;
+    color: rgba(0,200,100,1);
 }
 
 .contact-content input[type="email"],
@@ -3058,7 +3055,7 @@ html.no-csstransitions .home-content__main {
 .contact-content textarea:focus,
 .contact-content select:focus {
     color: #FFFFFF;
-    border-bottom: 1px solid #39b54a;
+    border-bottom: 1px solid rgba(0,200,100,1);
 }
 
 .contact-content button,
@@ -3149,7 +3146,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-social li a:hover, 
 .contact-social li a:focus {
-    color: #39b54a;
+    color: rgba(0,200,100,1);
 }
 
 .contact-social li:last-child {
@@ -3172,7 +3169,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .message-success {
-    color: #39b54a;
+    color: rgba(0,200,100,1);
 }
 
 .message-warning i, .message-success i {
@@ -3364,7 +3361,7 @@ footer a {
 }
 
 footer a:hover, footer a:focus, footer a:active {
-    color: #39b54a;
+    color: rgba(0,200,100,1);
 }
 
 footer .row {
@@ -3459,8 +3456,8 @@ footer .disclamier{
     top: 0;
     right: 0;
     color: #FFFFFF;
-    background: #39b54a;
-    border-color: #39b54a;
+    background: rgba(0,200,100,1);
+    border-color: rgba(0,200,100,1);
     padding: 0 20px;
 }
 
@@ -3520,8 +3517,7 @@ footer .disclamier{
     width: 60px;
     line-height: 60px;
     text-align: center;
-    background: black;
-    color: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     text-align: center;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease-in-out;
