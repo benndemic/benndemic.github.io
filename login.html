@@ -42,15 +42,15 @@
         <form class="forms_form">
           <fieldset class="forms_fieldset">
             <div class="forms_field">
-              <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
+              <input type="email" id='email_field' placeholder="Email" class="forms_field-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autofocus />
             </div>
             <div class="forms_field">
-              <input type="password" placeholder="Password" class="forms_field-input" required />
+              <input type="password" id='password_field' placeholder="Password" class="forms_field-input" required />
             </div>
           </fieldset>
           <div class="forms_buttons">
             <button type="button" class="forms_buttons-forgot">Forgot password?</button>
-            <input type="submit" value="Log In" class="forms_buttons-action" onclick="window.location.href='index.html'">
+            <input type="submit" value="Log In" id="login" class="forms_buttons-action">
           </div>
         </form>
       </div>
@@ -59,17 +59,17 @@
         <form class="forms_form">
           <fieldset class="forms_fieldset">
             <div class="forms_field">
-              <input type="text" placeholder="Full Name" class="forms_field-input" required />
+              <input type="text" placeholder="Full Name" id='name_fld' class="forms_field-input" required />
             </div>
             <div class="forms_field">
-              <input type="email" placeholder="Email" class="forms_field-input" required />
+              <input type="email" placeholder="Email" id='sign-email' class="forms_field-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
             </div>
             <div class="forms_field">
-              <input type="password" placeholder="Password" class="forms_field-input" required />
+              <input type="password" id='sign-password' placeholder="Password" class="forms_field-input" required />
             </div>
           </fieldset>
           <div class="forms_buttons">
-            <input type="submit" value="Sign up" class="forms_buttons-action" onclick="window.location.href='login.html'">
+            <input type="submit" id='signup' value="Sign up" class="forms_buttons-action">
           </div>
         </form>
       </div>
