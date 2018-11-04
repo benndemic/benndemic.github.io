@@ -79,7 +79,7 @@ function Redirect(local){
 submit_button.addEventListener('click', () => {
   if (validate_email(email_field) & validatePassword(password_field)){
     // alert('working')
-    setTimeout(function() {window.location = "index.html" })
+    setTimeout(function() {window.location = "home.html" })
   }
   else { 
     alert('Invalid login details : \n Valid Email must be entered \n Password must be alphanumerical and between 8 to 16 charachters')
@@ -108,7 +108,7 @@ signup_button.addEventListener('click', () => {
   if (validate_email(sign_email_field) & validatePassword(sign_password_field) & validate_name(sign_name_field)){
     // alert('working')
     alert("You are logged in with the entered credencials :)")
-    setTimeout(function() {window.location = "index.html" })
+    setTimeout(function() {window.location = "home.html" })
   }
   else { 
     alert('Invalid login details : \n Valid Email must be entered \n Password must be alphanumerical and between 8 to 16 charachters')
