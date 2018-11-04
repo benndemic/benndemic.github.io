@@ -24,7 +24,7 @@ loginButton.addEventListener('click', () => {
 const email_field = document.getElementById('email_field'),
   submit_button = document.getElementById('login'),
   password_field = document.getElementById('password_field')
-function validate_email(field)
+function validate_email(field){
     with (field)
     {
         apos=value.indexOf("@");
