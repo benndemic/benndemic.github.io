@@ -1,9 +1,24 @@
+<<<<<<< HEAD
+ @font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+}
+=======
 /**
  * General variables
  */
 /**
  * General configs
  */
+>>>>>>> b681e63875dea1d7c89f35c139dae01adda83d12
 * {
   box-sizing: border-box;
 }
@@ -424,8 +439,13 @@ input::placeholder {
             transform: translate3d(calc(100% + 30px), -50%, 0);
   }
   100% {
+<<<<<<< HEAD
+    -webkit-transform: translateY(-4500px) rotate(600deg);
+            transform: translateY(-4500px) rotate(600deg);
+=======
     -webkit-transform: translate3d(100%, -50%, 0);
             transform: translate3d(100%, -50%, 0);
+>>>>>>> b681e63875dea1d7c89f35c139dae01adda83d12
   }
 }
 @keyframes bounceRight {
@@ -438,8 +458,13 @@ input::placeholder {
             transform: translate3d(calc(100% + 30px), -50%, 0);
   }
   100% {
+<<<<<<< HEAD
+    -webkit-transform: translateY(-4500px) rotate(600deg);
+            transform: translateY(-4500px) rotate(600deg);
+=======
     -webkit-transform: translate3d(100%, -50%, 0);
             transform: translate3d(100%, -50%, 0);
+>>>>>>> b681e63875dea1d7c89f35c139dae01adda83d12
   }
 }
 /**
@@ -473,6 +498,53 @@ input::placeholder {
   background: url(../images/Gorgeous-Cloud-Wallpaper.jpg) no-repeat center;
   background-size: cover;
 }
+<<<<<<< HEAD
+
+.header-logo:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 0.5s ;
+}
+
+.header-logo a {
+  display: block;
+  padding: 0;
+  outline: 0;
+  border: none;
+  width: 200px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* ------------------------------------------------------------------- 
+* ## main navigation 
+* ------------------------------------------------------------------- */
+.header-nav {
+  background: #0C0C0C;
+  color: rgba(255, 255, 255, 0.25);
+  font-family: "montserrat-light", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.846;
+  padding: 3.6rem 3rem 3.6rem 3.6rem;
+  height: 100%;
+  width: 280px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 700;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateZ(0);
+  /* -webkit-backface-visibility: hidden; */
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: hidden;
+=======
 .user_options-container {
   position: relative;
   width: 80%;
@@ -494,6 +566,7 @@ input::placeholder {
   padding: 75px 45px;
   color: #fff;
   font-weight: 300;
+>>>>>>> b681e63875dea1d7c89f35c139dae01adda83d12
 }
 
 .user_registered-title,
