@@ -24,6 +24,7 @@ button {
 @media (min-width: 576px) {
     body {
         padding-top: 15px;
+        /* color:#0087cc */
     }
 
     .main-container {
