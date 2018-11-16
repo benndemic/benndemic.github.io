@@ -1,8 +1,8 @@
-$(function () {
+$(function() {
 
-   $(".input input").focus(function () {
+   $(".input input").focus(function() {
 
-      $(this).parent(".input").each(function () {
+      $(this).parent(".input").each(function() {
          $("label", this).css({
             "line-height": "18px",
             "font-size": "18px",
@@ -13,12 +13,12 @@ $(function () {
             "width": "100%"
          })
       });
-   }).blur(function () {
+   }).blur(function() {
       $(".spin").css({
          "width": "0px"
       })
       if ($(this).val() == "") {
-         $(this).parent(".input").each(function () {
+         $(this).parent(".input").each(function() {
             $("label", this).css({
                "line-height": "60px",
                "font-size": "24px",
@@ -30,7 +30,7 @@ $(function () {
       }
    });
 
-   $(".button").click(function (e) {
+   $(".button").click(function(e) {
       var pX = e.pageX,
          pY = e.pageY,
          oX = parseInt($(this).offset().left),
@@ -47,7 +47,7 @@ $(function () {
       $("button", this).addClass('active');
    })
 
-   $(".alt-2").click(function () {
+   $(".alt-2").click(function() {
       if (!$(this).hasClass('material-button')) {
          $(".shape").css({
             "width": "100%",
@@ -55,7 +55,7 @@ $(function () {
             "transform": "rotate(0deg)"
          })
 
-         setTimeout(function () {
+         setTimeout(function() {
             $(".overbox").css({
                "overflow": "initial"
             })
@@ -64,7 +64,7 @@ $(function () {
          $(this).animate({
             "width": "140px",
             "height": "140px"
-         }, 500, function () {
+         }, 500, function() {
             $(".box").removeClass("back");
 
             $(this).removeClass('active')
@@ -79,10 +79,10 @@ $(function () {
 
    })
 
-   $(".material-button").click(function () {
+   $(".material-button").click(function() {
 
       if ($(this).hasClass('material-button')) {
-         setTimeout(function () {
+         setTimeout(function() {
             $(".overbox").css({
                "overflow": "hidden"
             })
@@ -93,7 +93,7 @@ $(function () {
             "height": "700px"
          });
 
-         setTimeout(function () {
+         setTimeout(function() {
             $(".shape").css({
                "width": "50%",
                "height": "50%",
@@ -117,113 +117,3 @@ $(function () {
    });
 
 });
-
-/* VERIFICATION CODE */
-
-const login_email = document.getElementById('login_email'),
-   login_pass = document.getElementById('login_pass'),
-   reg_email = document.getElementById('reg_email'),
-   reg_pass = document.getElementById('reg_pass'),
-   rereg_pass = document.getElementById('rereg_pass'),
-   login_button = document.getElementById('login_button'),
-   reg_button = document.getElementById('reg_button')
-
-function validate_email(field) {
-   with (field) {
-      apos = value.indexOf("@");
-      dotpos = value.lastIndexOf(".");
-      if (apos < 1 || dotpos - apos < 2) {
-         // alert(alerttxt);
-         return false;
-      }
-      else {
-         return true;
-      }
-   }
-}
-
-function validatePassword(fld) {
-   var illegalChars = /[\W_]/; // allow only letters and numbers
-
-   if (fld.value == "") {
-      fld.style.background = 'blue';
-      error = "You didn't enter a password.\n";
-      // alert(error);
-      return false;
-
-   } else if ((fld.value.length < 7) || (fld.value.length > 15)) {
-      error = "The password is the wrong length. \n";
-      fld.style.background = 'blue';
-      // alert(error);
-      return false;
-
-   } else if (illegalChars.test(fld.value)) {
-      error = "The password contains illegal characters.\n";
-      fld.style.background = 'blue';
-      // alert(error);
-      return false;
-
-   } else if ((fld.value.search(/[a-zA-Z]+/) == -1) || (fld.value.search(/[0-9]+/) == -1)) {
-      error = "The password must contain at least one numeral.\n";
-      fld.style.background = 'blue';
-      // alert(error);
-      return false;
-
-   } else {
-      fld.style.background = 'White';
-   }
-   return true;
-}
-
-function Redirect(local) {
-   window.location.href = local
-}
-
-login_button.addEventListener('click', () => {
-   if (validate_email(login_email) & validatePassword(login_pass)) {
-      // alert('working')
-      setTimeout(function () { window.location = "home.html" })
-   }
-   else {
-      alert('Invalid login details : \n Valid Email must be entered \n Password must be alphanumerical and between 8 to 16 charachters')
-   }
-}, false)
-
-// SIGN UP FORM
-
-function validate_name(fld) {
-   var letters = /^[A-Za-z]+$/;
-   if (fld.value.match(letters)) {
-      return true;
-   }
-   else {
-      // alert("message");
-      return false;
-   }
-}
-
-function validateRePassword(fld1,fld2){
-   if(fld1.value==fld2.value)
-   {
-      return true;
-   }
-   else
-   {
-      return false;
-   }
-}
-
-reg_button.addEventListener('click', () => {
-   if (validate_email(reg_email) & validatePassword(reg_pass) & validateRePassword(reg_pass,rereg_pass)) {
-      // alert('working')
-      alert("You are logged in with the entered credencials :)")
-      setTimeout(function () { window.location = "home.html" })
-   }
-   else {
-      alert('Invalid login details : \n Valid Email must be entered \n Password must be alphanumerical and between 8 to 16 charachters')
-   }
-}, false) 
-
-document.getElementById('forgot').addEventListener('click', () => {
-   alert('This functionality is not built-in yet for the POC (Alpha 1.0) build, please register with a new id :)')
-},false)
