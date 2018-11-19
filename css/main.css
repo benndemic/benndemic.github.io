@@ -64,6 +64,10 @@ html {
     html {
         font-size: 9.411764705882353px;
     }
+    
+    .home-content__buttons {
+        
+    }
 }
 
 html, body {
@@ -877,6 +881,7 @@ input[type="button"].btn--primary:focus {
 .btn--stroke:hover, button.btn--stroke:hover {
     border: 0.2rem solid #000000;
     color: #000000;
+/*    padding: 1% 26%;*/
 }
 
 .btn--pill, button.btn--pill {
@@ -887,6 +892,7 @@ input[type="button"].btn--primary:focus {
 
 button::-moz-focus-inner, input::-moz-focus-inner {
     border: 0;
+/*    padding: 1% 26%;*/
     padding: 0;
 }
 
@@ -1833,14 +1839,15 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     width: 225px;
     border-color: #FFFFFF;
     color: #FFFFFF;
-    margin: 1.5rem 1.5rem 0 0;
+/*    margin: 1.5rem 1.5rem 0 0;*/
+    margin-right: 0px;
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
 .home-content__buttons .btn:last-child {
-    margin-right: 0;
+    margin-right:0px;
 }
 
 .home-content__buttons .btn:hover, 
