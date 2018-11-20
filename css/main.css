@@ -64,10 +64,6 @@ html {
     html {
         font-size: 9.411764705882353px;
     }
-    
-    .home-content__buttons {
-        
-    }
 }
 
 html, body {
@@ -1291,12 +1287,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 @media only screen and (max-width: 400px){
     .home-content__buttons .btn:first-child{
         padding: 0% 25.5%;
-    }
-}
-
-@media only screen and (max-width: 500px) and (min-width: 400px){
-    .home-content__buttons .btn:first-child{
-/*        padding: 0% 21.5%;*/
     }
 }
 
