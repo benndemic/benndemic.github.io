@@ -7,7 +7,5 @@ WELCOME TO BENNETMEDICA
 
 
 KNOW ISSUES (TODO) :
-* mismatching animation speed in menu icon.
-* webpage 10% larger than expected.
-* slow loading.
-* redundent/obsolete code. 
+* API consent form validation
+* DB connection
