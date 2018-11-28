@@ -20677,8 +20677,8 @@ Object.defineProperty(exports, "__esModule", {
  */
 
 var settings = {
-  'app-id': '7deb6281',
-  'app-key': '8a8b8410f582be6a46bd7a4d982f43dc'
+  'app-id': 'b796dd04',
+  'app-key': '15e518e015c4a0ca42cb1c2e2cc2b565'
 };
 
 exports.default = settings;
