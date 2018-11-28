@@ -22139,7 +22139,7 @@ exports = module.exports = __webpack_require__(49)();
 
 
 // module
-exports.push([module.i, "body{\n background: url('https://stmed.net/sites/default/files/turquoise-blur-wallpapers-25329-1643952.jpg');  \n}\n  .main-container {\n    padding: 0;\n}\n\n.card {\n  background-color:rgba(255,255,255,0.9);\n  border-radius: 0;\n  border: none;\n}\n\n.summary-item {\n    margin-bottom: 10px;\n}\n\n#step-container {\n    min-height: 470px;\n    padding: 12px 20px;\n}\n\nbutton {\n    cursor: pointer;\n}\n\n\n@media (min-width: 576px) {\n    body {\n        padding-top: 15px;\n    }\n\n    .main-container {\n        padding-left: 15px;\n        padding-right: 15px;\n    }\n\n    .card {\n        border-radius: 4px;\n        border: 1px solid rgba(0, 0, 0, 0.125);\n    }\n}\n", ""]);
+exports.push([module.i, "body{\n background: url('images/blur-bg.jpg');  \n}\n  .main-container {\n    padding: 0;\n}\n\n.card {\n  background-color:rgba(255,255,255,0.9);\n  border-radius: 0;\n  border: none;\n}\n\n.summary-item {\n    margin-bottom: 10px;\n}\n\n#step-container {\n    min-height: 470px;\n    padding: 12px 20px;\n}\n\nbutton {\n    cursor: pointer;\n}\n\n\n@media (min-width: 576px) {\n    body {\n        padding-top: 15px;\n    }\n\n    .main-container {\n        padding-left: 15px;\n        padding-right: 15px;\n    }\n\n    .card {\n        border-radius: 4px;\n        border: 1px solid rgba(0, 0, 0, 0.125);\n    }\n}\n", ""]);
 // exports
 
 
